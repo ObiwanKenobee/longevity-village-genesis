@@ -32,9 +32,18 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({
             <div className="text-sm text-muted-foreground hidden sm:block">
               Digital Twin v1.0
             </div>
-            <div className="flex items-center gap-1">
-              <div className="w-2 h-2 rounded-full bg-health-green animate-pulse"></div>
-              <span className="text-xs text-health-green">Live</span>
+            <div className="flex items-center gap-2 md:gap-4">
+              <select className="text-xs bg-transparent border border-border rounded px-1 py-0.5 focus:outline-none focus:ring-1 focus:ring-health-primary">
+                <option value="arizona">Arizona, USA</option>
+                <option value="okinawa">Okinawa, Japan</option>
+                <option value="sardinia">Sardinia, Italy</option>
+                <option value="costa-rica">Costa Rica</option>
+                <option value="loma-linda">Loma Linda, CA</option>
+              </select>
+              <div className="flex items-center gap-1">
+                <div className="w-2 h-2 rounded-full bg-health-green animate-pulse"></div>
+                <span className="text-xs text-health-green">Live</span>
+              </div>
             </div>
           </div>
         </div>

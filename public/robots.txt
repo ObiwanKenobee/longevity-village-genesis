@@ -1,14 +1,30 @@
+
+User-agent: *
+Allow: /
+
+# Target location priorities
+Allow: /locations/arizona
+Allow: /locations/okinawa
+Allow: /locations/sardinia
+Allow: /locations/costa-rica
+Allow: /locations/loma-linda
+
+# Helpful directives for search engines
+Sitemap: https://longevityvillage.com/sitemap.xml
+
+# Allow Googlebot to efficiently crawl
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
+# Allow Bingbot to efficiently crawl
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 2
 
+# Allow social media bots
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
-Allow: /
-
-User-agent: *
 Allow: /
